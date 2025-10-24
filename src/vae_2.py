@@ -37,9 +37,9 @@ from vae.vae_utils import (
 from visualize import plot_samples, plot_latent_space_samples, visualize_and_save_tsne
 
 config = {
-    "dataset": "microwave_lightwave_bt500",
+    "dataset": "air_condition_freeze_auto_1h",
     "vae_type": "timeVAE",
-    "time_step_num": 60
+    "time_step_num": 600
 }
 
 

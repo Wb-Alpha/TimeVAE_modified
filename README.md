@@ -56,6 +56,30 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Run By vae_2.py(Recommend)
+
+1. **Prepare Data**: Save your data as a numpy array with shape `(n_samples, n_timesteps, n_features)` in the `./data/` folder in `.npz` format. The filename without the extension will be used as the dataset name (e.g., `my_data.npz` will be referred to as `my_data`). Alternatively, use one of the existing datasets provided in the `./data/` folder.
+
+2. **Configure Python Script**:
+modify the config in `vae_2.py` according to your dataset:
+
+python will read the .npz file whose name include "microwave_lightwave_bt500" in `./dataset` folder. Therefore, create the `./dataset` folder if it does not exist.
+
+```python
+config = {
+    "dataset": "microwave_lightwave_bt500",
+    "vae_type": "timeVAE",
+    "time_step_num": 600
+}
+```
+
+3. **Run the Script**:
+
+> python vae_2.py
+
+
+### Run By vae_pipeline.py`
+
 1. **Prepare Data**: Save your data as a numpy array with shape `(n_samples, n_timesteps, n_features)` in the `./data/` folder in `.npz` format. The filename without the extension will be used as the dataset name (e.g., `my_data.npz` will be referred to as `my_data`). Alternatively, use one of the existing datasets provided in the `./data/` folder.
 
 2. **Configure Pipeline**:
