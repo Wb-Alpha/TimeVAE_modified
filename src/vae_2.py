@@ -37,9 +37,9 @@ from vae.vae_utils import (
 from visualize import plot_samples, plot_latent_space_samples, visualize_and_save_tsne
 
 config = {
-    "dataset": "air_condition_freeze_auto_1h",
+    "dataset": "washing_machine/washing_machine_cycles",
     "vae_type": "timeVAE",
-    "time_step_num": 600
+    "time_step_num": 76
 }
 
 

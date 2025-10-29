@@ -134,7 +134,7 @@ def run_vae_pipeline(dataset_name: str, vae_type: str):
 
 if __name__ == "__main__":
     # check `/data/` for available datasets
-    dataset = "air_condition_freeze_auto_1h"
+    dataset = "washing_machine"
 
     # models: vae_dense, vae_conv, timeVAE
     model_name = "timeVAE"
